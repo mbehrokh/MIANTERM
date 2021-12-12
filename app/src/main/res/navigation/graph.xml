@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    app:startDestination="@id/form2">
+
+    <fragment
+        android:id="@+id/form2"
+        android:name="com.example.mianterm.form"
+        android:label="fragment_form"
+        tools:layout="@layout/fragment_form" >
+        <action
+            android:id="@+id/action_form2_to_form22"
+            app:destination="@id/form22" />
+    </fragment>
+    <fragment
+        android:id="@+id/form22"
+        android:name="com.example.mianterm.form2"
+        android:label="fragment_form2"
+        tools:layout="@layout/fragment_form2" >
+        <action
+            android:id="@+id/action_form22_to_form2"
+            app:destination="@id/form2" />
+    </fragment>
+</navigation>
